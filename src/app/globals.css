@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-heebo), system-ui, sans-serif;
+  --color-brand-50: #eff6ff;
+  --color-brand-100: #dbeafe;
+  --color-brand-500: #2563eb;
+  --color-brand-600: #1d4ed8;
+  --color-brand-700: #1e40af;
+  --color-surface: #f8fafc;
+  --color-card: #ffffff;
+  --color-muted: #64748b;
+  --color-border: #e2e8f0;
+  --color-success: #16a34a;
+  --color-danger: #dc2626;
+}
+
+html {
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  @apply bg-surface text-slate-900 antialiased;
+  min-height: 100dvh;
+}
+
+input,
+button,
+textarea {
+  font: inherit;
+}
+
+.scanner-region video {
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
+.scanner-region #qr-shaded-region {
+  border-radius: 1rem !important;
+}
